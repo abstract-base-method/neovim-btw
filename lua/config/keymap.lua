@@ -19,6 +19,10 @@ vim.api.nvim_set_keymap('n', '<Up>', '<Nop>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Down>', '<Nop>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Left>', '<Nop>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Right>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<Up>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<Down>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<Left>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<Right>', '<Nop>', { noremap = true, silent = true })
 
 -- Check for the operating system
 local is_linux = vim.fn.has('unix') == 1 and vim.fn.has('linux') == 1
