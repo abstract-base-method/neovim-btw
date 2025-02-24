@@ -33,7 +33,7 @@ return {
 			{ "<leader>fs", function() Snacks.picker.explorer() end,            desc = "file explorer" },
 			{ "<leader>gd", function() Snacks.picker.lsp_definitions() end,     desc = "LSP Definitions" },
 			{ "<leader>gD", function() Snacks.picker.lsp_declarations() end,    desc = "LSP Declarations" },
-			{ "<leader>gr", function() Snacks.picker.lsp_definitions() end,     desc = "LSP References" },
+			{ "<leader>gr", function() Snacks.picker.lsp_references() end,      desc = "LSP References" },
 			{ "<leader>gI", function() Snacks.picker.lsp_implementations() end, desc = "LSP Implementations" },
 			{ "<leader>z",  function() Snacks.zen() end,                        desc = "Toggle Zen Mode" },
 			{ "<leader>Z",  function() Snacks.zen.zoom() end,                   desc = "Toggle Zoom" },
