@@ -9,15 +9,16 @@ vim.api.nvim_set_keymap('n', '<leader>vs', ':vsplit<CR>', { noremap = true, sile
 vim.api.nvim_set_keymap('n', '<leader>hs', ':split<CR>', { noremap = true, silent = true })
 
 -- Create custom key mappings for moving between splits
-vim.api.nvim_set_keymap('n', '<leader><Right>', '<C-w>l', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader><Left>', '<C-w>h', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader><Up>', '<C-w>k', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader><Down>', '<C-w>j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>l', '<C-w>l', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>h', '<C-w>h', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>k', '<C-w>k', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>j', '<C-w>j', { noremap = true, silent = true })
 
+-- Disable the arrow keys for most navigation
+vim.api.nvim_set_keymap('n', '<Up>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Down>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Left>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Right>', '<Nop>', { noremap = true, silent = true })
 
 -- Check for the operating system
 local is_linux = vim.fn.has('unix') == 1 and vim.fn.has('linux') == 1
