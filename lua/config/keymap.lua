@@ -51,12 +51,5 @@ vim.keymap.set('n', '<leader>gsb', gitsigns.toggle_current_line_blame, {})
 vim.keymap.set('n', '<leader>K', vim.lsp.buf.hover, {})
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
 
-local telescopebuiltin = require("telescope.builtin")
-vim.keymap.set("n", "<leader><leader>", telescopebuiltin.find_files, {})
-vim.keymap.set("n", "<leader>sw", telescopebuiltin.buffers, {})
-vim.keymap.set("n", "<leader>gg", telescopebuiltin.live_grep, {})
-vim.keymap.set("n", "<leader>gr", telescopebuiltin.lsp_references, {})
-vim.keymap.set("n", "<leader>gd", telescopebuiltin.lsp_definitions, {})
-vim.keymap.set("n", "<leader>gt", telescopebuiltin.lsp_implementations, {})
 
 vim.api.nvim_set_keymap('n', '<leader>rr', ':lua os.exit(1)<CR>', { noremap = true, silent = true })
