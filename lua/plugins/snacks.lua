@@ -2,7 +2,6 @@ return {
 	"folke/snacks.nvim",
 	priority = 1000,
 	lazy = false,
-	---@type snacks.Config
 	opts = {
 		-- your configuration comes here
 		-- or leave it empty to use the default settings
@@ -11,7 +10,6 @@ return {
 		dashboard = { enabled = true },
 		explorer = {
 			enabled = true,
-			layout = { position = "right" },
 		},
 		indent = { enabled = true },
 		input = { enabled = true },
@@ -33,7 +31,7 @@ return {
 	keys = {
 		{ "<leader><leader>", function() Snacks.picker.smart() end,               desc = "Find files" },
 		{ "<leader>fb",       function() Snacks.picker.buffers() end,             desc = "Find buffer" },
-		{ "<leader>fg",       function() Snacks.picker.grep() end,                desc = "Search Grep" },
+		{ "<leader>gg",       function() Snacks.picker.grep() end,                desc = "Search Grep" },
 		{ "<leader>fs",       function() Snacks.picker.explorer() end,            desc = "file explorer" },
 		{ "<leader>gd",       function() Snacks.picker.lsp_definitions() end,     desc = "LSP Definitions" },
 		{ "<leader>gD",       function() Snacks.picker.lsp_declarations() end,    desc = "LSP Declarations" },
@@ -48,7 +46,7 @@ return {
 		{ "<leader>gB",       function() Snacks.gitbrowse() end,                  desc = "Git Browse",                  mode = { "n", "v" } },
 		{ "<leader>gb",       function() Snacks.git.blame_line() end,             desc = "Git Blame Line" },
 		{ "<leader>gf",       function() Snacks.lazygit.log_file() end,           desc = "Lazygit Current File History" },
-		{ "<leader>gg",       function() Snacks.lazygit() end,                    desc = "Lazygit" },
+		{ "<leader>gG",       function() Snacks.lazygit() end,                    desc = "Lazygit" },
 		{ "<leader>gl",       function() Snacks.lazygit.log() end,                desc = "Lazygit Log (cwd)" },
 		{ "<leader>un",       function() Snacks.notifier.hide() end,              desc = "Dismiss All Notifications" },
 		{ "<leader>t",        function() Snacks.terminal() end,                   desc = "Toggle Terminal" },
