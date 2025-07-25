@@ -29,7 +29,7 @@ return {
 		words = { enabled = true },
 	},
 	keys = {
-		{ "<leader><leader>", function() Snacks.picker.smart() end,               desc = "Find files" },
+		{ "<leader><leader>", function() Snacks.picker.files() end,               desc = "Find files" },
 		{ "<leader>fb",       function() Snacks.picker.buffers() end,             desc = "Find buffer" },
 		{ "<leader>gg",       function() Snacks.picker.grep() end,                desc = "Search Grep" },
 		{ "<leader>fs",       function() Snacks.picker.explorer() end,            desc = "file explorer" },

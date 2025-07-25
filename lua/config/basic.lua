@@ -20,7 +20,7 @@ vim.o.foldmethod = 'expr'
 -- Set fold expression to use Treesitter for folding
 vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
 -- Optional: Customize fold settings
-vim.o.foldenable = false -- Enable folding by default
+vim.o.foldenable = true -- Enable folding by default
 vim.o.foldlevel = 99
 -- Optional: Automatically fold in certain filetypes
 vim.cmd [[
