@@ -8,7 +8,9 @@
     "lazyvim.plugins.extras.lang.terraform",
     "lazyvim.plugins.extras.lang.toml",
     "lazyvim.plugins.extras.lang.typescript",
-    "lazyvim.plugins.extras.lang.yaml"
+    "lazyvim.plugins.extras.lang.vue",
+    "lazyvim.plugins.extras.lang.yaml",
+    "lazyvim.plugins.extras.lang.zig"
   ],
   "install_version": 8,
   "news": {
